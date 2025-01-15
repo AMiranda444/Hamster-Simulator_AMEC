@@ -15,6 +15,7 @@ public class PlayerDeadState : PlayerBaseState
 
     public override void OnEnter(PlayerStateMachine _machine)
     {
+        Debug.Log("Dead");
         cameraController.CanRotate(false);
         thirdPersonComponent = virtualCamera.GetCinemachineComponent<Cinemachine3rdPersonFollow>();
         _machine.gameObject.GetComponent<PlayerMovement>().enabled = false;

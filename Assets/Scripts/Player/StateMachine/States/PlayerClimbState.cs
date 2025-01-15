@@ -10,7 +10,7 @@ public class PlayerClimbState : PlayerBaseState
 
     public override void OnEnter(PlayerStateMachine _machine)
     {
-        
+        Debug.Log("Climbing");
     }
 
     public override void OnUpdate(PlayerStateMachine _machine)
